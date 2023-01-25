@@ -1,9 +1,10 @@
 function Bedroom(props) {
     return (
         <>
-        <div> {props.bed}</div>
-           
+        <div> <h3>{props.bed}</h3></div>
         </>
+           
+      
     )
 }
 
