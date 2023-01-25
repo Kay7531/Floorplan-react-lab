@@ -3,22 +3,18 @@ import Bedroom from "./Bedroom"
 import Kitchen from "./Kitchen"
 import LivingRoom from "./LivingRoom"
 function Floorplan(props) {
-    return(
+    return (
         <>
             {props.roomPlan.bedNum.map(bed =>
-            <Bedroom bed={bed}/>
+                <Bedroom bed={bed} />
             )}
-        
-        <div><LivingRoom/></div>
-        <div> <Kitchen/> </div>
-    
-       {props.roomPlan.sizes.map(size =>
-        <Bath size={size}/>
-        )}
-       
-       
-        
-        
+
+            <div><LivingRoom /></div>
+            <div> <Kitchen /> </div>
+
+            {props.roomPlan.sizes.map(size =>
+                <Bath size={size} />
+            )}
         </>
     )
 }
